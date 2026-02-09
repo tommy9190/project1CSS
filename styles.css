@@ -360,3 +360,38 @@ a {
   border-bottom-width: 2px;
   border-bottom-style: solid;
 }
+
+/* Mobile Specific Colors */
+.footer__column--track .footer__heading {
+  border-bottom-color: var(--color-blue);
+  color: white;
+}
+.footer__column--mastodon .footer__heading {
+  border-bottom-color: var(--color-yellow);
+  color: var(--color-blue);
+}
+
+/* Instagram */
+.instagram-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+.instagram__img {
+  width: 100%;
+  display: block;
+}
+
+/* Mastodon */
+.mastodon-item {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #34495e;
+}
+.mastodon-item:last-child {
+  border-bottom: none;
+}
+.mastodon-user {
+  color: var(--color-blue);
+  font-weight: bold;
+}
