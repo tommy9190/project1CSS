@@ -323,3 +323,40 @@ a {
   font-size: 0.85rem;
   line-height: 1.5;
 }
+
+/* Widgets Section */
+.footer__widgets {
+  padding: 3rem 0;
+}
+
+.footer__container--widgets {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1.5rem;
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer__column--about,
+.footer__column--instagram {
+  display: none;
+}
+
+.footer__column--track {
+  order: 1;
+}
+.footer__column--mastodon {
+  order: 2;
+}
+
+/* Footer Headings */
+.footer__heading {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  display: inline-block;
+  width: 100%;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+}
