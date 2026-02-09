@@ -40,3 +40,68 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
+/* HEADER (Mobile Default) */
+.header {
+    background-color: var(--color-white);
+    padding: 15px 0;
+}
+
+.header__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header__logo-area {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo-link {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #444;
+}
+
+.header__logo-img {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+/* Nav */
+.header__nav {
+    display: none;
+}
+
+.nav__btn {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+}
+.nav__btn--home {
+    background-color: var(--color-green);
+}
+.nav__btn--portfolio {
+    background-color: var(--color-yellow);
+}
+.nav__btn--blog {
+    background-color: var(--color-red);
+}
+.nav__btn--quo {
+    background-color: var(--color-blue);
+}
+.nav__btn--chat {
+    background-color: var(--color-dark-blue);
+}
