@@ -1,0 +1,261 @@
+/* VARIABLES & RESET */
+:root {
+    /* Metro UI Colors */
+    --color-green: #00c389;
+    --color-yellow: #f1c40f;
+    --color-red: #e74c3c;
+    --color-blue: #3498db;
+    --color-dark-blue: #2c3e50;
+    --color-bg-hero: #a9cce3;
+    --color-text-main: #333;
+    --color-text-light: #7f8c8d;
+    --color-white: #ffffff;
+    --color-footer-bg: #1a252f;
+    --font-stack: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-stack);
+    line-height: 1.6;
+    color: var(--color-text-main);
+    background-color: var(--color-white);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* HEADER (Mobile Default) */
+.header {
+    background-color: var(--color-white);
+    padding: 15px 0;
+}
+
+.header__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header__logo-area {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo-link {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #444;
+}
+
+.header__logo-img {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+/* Nav */
+.header__nav {
+    display: none;
+}
+
+.nav__btn {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+}
+.nav__btn--home {
+    background-color: var(--color-green);
+}
+.nav__btn--portfolio {
+    background-color: var(--color-yellow);
+}
+.nav__btn--blog {
+    background-color: var(--color-red);
+}
+.nav__btn--quo {
+    background-color: var(--color-blue);
+}
+.nav__btn--chat {
+    background-color: var(--color-dark-blue);
+}
+
+/* HERO SECTION */
+.section--hero {
+    display: none;
+    padding: 0;
+}
+
+/* INTRO & COMMON SECTIONS */
+.section {
+    padding: 3rem 0;
+}
+
+.section__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.section--intro {
+    padding-bottom: 0;
+}
+
+.intro__heading {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.4;
+    color: #444;
+}
+
+.text--highlight {
+    color: var(--color-blue);
+    font-weight: bold;
+}
+
+.section__header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section__title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.section__subtitle {
+    color: #999;
+    font-size: 0.9rem;
+}
+
+/* SERVICES SECTION */
+.services__grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.service-card {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.service-card__icon {
+    width: 80px;
+    height: 80px;
+    padding: 15px;
+    border: 4px solid #ddd;
+    flex-shrink: 0;
+}
+
+.service-card:nth-of-type(1) .service-card__icon {
+    border-color: var(--color-yellow);
+}
+.service-card:nth-of-type(2) .service-card__icon {
+    border-color: var(--color-green);
+}
+.service-card:nth-of-type(3) .service-card__icon {
+    border-color: var(--color-red);
+}
+.service-card:nth-of-type(4) .service-card__icon {
+    border-color: var(--color-blue);
+}
+
+.service-card__title {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.service-card__text {
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+}
+
+/* BLOG SECTION */
+.blog__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.blog-post {
+    position: relative;
+}
+
+.blog-post__date-badge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(231, 76, 60, 0.95);
+    color: white;
+    padding: 8px 12px;
+    text-align: center;
+    min-width: 60px;
+    z-index: 2;
+}
+.date__day {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1;
+}
+.date__month {
+    display: block;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+}
+
+.blog-post__img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.blog-post__info {
+    background-color: #2bbbf1;
+    color: white;
+    padding: 12px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.blog-post__title {
+    font-size: 0.95rem;
+    font-weight: normal;
+}
+.blog-post__category {
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
