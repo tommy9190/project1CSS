@@ -1,0 +1,42 @@
+/* VARIABLES & RESET */
+:root {
+    /* Metro UI Colors */
+    --color-green: #00c389;
+    --color-yellow: #f1c40f;
+    --color-red: #e74c3c;
+    --color-blue: #3498db;
+    --color-dark-blue: #2c3e50;
+    --color-bg-hero: #a9cce3;
+    --color-text-main: #333;
+    --color-text-light: #7f8c8d;
+    --color-white: #ffffff;
+    --color-footer-bg: #1a252f;
+    --font-stack: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-stack);
+    line-height: 1.6;
+    color: var(--color-text-main);
+    background-color: var(--color-white);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
