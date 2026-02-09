@@ -105,3 +105,100 @@ a {
 .nav__btn--chat {
     background-color: var(--color-dark-blue);
 }
+
+/* HERO SECTION */
+.section--hero {
+    display: none;
+    padding: 0;
+}
+
+/* INTRO & COMMON SECTIONS */
+.section {
+    padding: 3rem 0;
+}
+
+.section__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.section--intro {
+    padding-bottom: 0;
+}
+
+.intro__heading {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.4;
+    color: #444;
+}
+
+.text--highlight {
+    color: var(--color-blue);
+    font-weight: bold;
+}
+
+.section__header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section__title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.section__subtitle {
+    color: #999;
+    font-size: 0.9rem;
+}
+
+/* SERVICES SECTION */
+.services__grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.service-card {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.service-card__icon {
+    width: 80px;
+    height: 80px;
+    padding: 15px;
+    border: 4px solid #ddd;
+    flex-shrink: 0;
+}
+
+.service-card:nth-of-type(1) .service-card__icon {
+    border-color: var(--color-yellow);
+}
+.service-card:nth-of-type(2) .service-card__icon {
+    border-color: var(--color-green);
+}
+.service-card:nth-of-type(3) .service-card__icon {
+    border-color: var(--color-red);
+}
+.service-card:nth-of-type(4) .service-card__icon {
+    border-color: var(--color-blue);
+}
+
+.service-card__title {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.service-card__text {
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+}
